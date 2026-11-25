@@ -1,0 +1,14 @@
+{
+  "name": "class-chat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "零依赖实时聊天室：同一网址，任何网络都能连进来聊",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
