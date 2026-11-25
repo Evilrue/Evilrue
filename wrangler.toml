@@ -1,0 +1,17 @@
+﻿name = "evilrue"
+main = "dist/worker.js"
+compatibility_date = "2025-06-01"
+workers_dev = true
+
+# 每个房间一个 Durable Object 实例：负责广播消息、保存最近 200 条
+[[durable_objects.bindings]]
+name = "ROOMS"
+class_name = "ChatRoom"
+
+# 免费计划只支持 SQLite 版 Durable Objects
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ChatRoom"]
+
+[observability]
+enabled = true

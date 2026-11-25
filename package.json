@@ -1,0 +1,11 @@
+{
+  "name": "evilrue-chat",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Worker 实时聊天室",
+  "scripts": {
+    "build": "node build.mjs",
+    "deploy": "wrangler deploy"
+  }
+}
